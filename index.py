@@ -6,6 +6,10 @@ import os
 from app import app
 from app_globals import *
 
+## this is the Flask app that we can pass to mod_wsgi 
+
+server=app.server 
+
 ## Layout is set by callback from either the url or the dropdown selection 
 
 app.layout = html.Div([
