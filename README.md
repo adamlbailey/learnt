@@ -9,7 +9,7 @@
 [Deployment](#deployment-section)
 
 <a name="architecture-section"></a>
-## Architecture(#Architecture) 
+## Architecture
 
 learnt is built on the incredible [dash framework!](https://plot.ly/products/dash/)
 
@@ -23,6 +23,7 @@ learnt is launched by executing the `index.py` script which can then call all ot
 
 The `app_globals.py` file contains several functions that can be imported into the rest of the dash app. In theory, these functions are objects or features that are intended to be used multiple times and/or on multiple pages throughout the app. Examples include the header for each page (`app_globals.nav_bar`) and a function for serving static images (`app_globals.embed_image`). 
 
+<a name="deployment-section"></a>
 ## Deployment(#deployment-section)
 
 Learnt is deployed with apache2 and mod_wsgi in a virtual environment 
