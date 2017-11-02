@@ -9,7 +9,7 @@
 [Deployment](#deployment-section)
 
 
-## Architecure(#architecture-section) 
+## Architecture(#Architecture) 
 
 learnt is built on the incredible [dash framework!](https://plot.ly/products/dash/)
 
@@ -33,9 +33,11 @@ Once that was working as described, the following changes were made so apache se
 
 Add this to the .wsgi script to activate the virtual environment and thus expose the dependencies:
 
-```activate_this = '/var/www/learnt/learnt/bin/activate_this.py'
+```
+activate_this = '/var/www/learnt/learnt/bin/activate_this.py'
 with open(activate_this) as file_:
-	exec(file_.read(),dict(__file__=activate_this))```
+	exec(file_.read(),dict(__file__=activate_this))
+```
   
 With the dash app itself, in this case `index.py`, I exposed the Flask server with this line `server = app.server` then imported that in the .wsgi script as 'application' which is the name of the object mod_wsgi is expecting.
 
