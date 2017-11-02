@@ -1,4 +1,4 @@
-# learnt
+![alt text](https://github.com/adamlbailey/learnt/blob/master/static/learnt_logo.png)
 
 ### Learnt is a conceptual learning playground that can be found [here](http://learnt.world) .  
 
