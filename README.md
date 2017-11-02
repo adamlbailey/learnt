@@ -8,7 +8,7 @@
 
 [Deployment](#deployment-section)
 
-
+<a name="architecture-section"></a>
 ## Architecture(#Architecture) 
 
 learnt is built on the incredible [dash framework!](https://plot.ly/products/dash/)
