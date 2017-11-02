@@ -5,11 +5,11 @@
 ## Table of Contents 
 
 [Architecture](#architecture-section)
+
 [Deployment](#deployment-section)
 
 
-## Architecure 
-(#architecture-section)
+## Architecure(#architecture-section) 
 
 learnt is built on the incredible [dash framework!](https://plot.ly/products/dash/)
 
@@ -23,8 +23,7 @@ learnt is launched by executing the `index.py` script which can then call all ot
 
 The `app_globals.py` file contains several functions that can be imported into the rest of the dash app. In theory, these functions are objects or features that are intended to be used multiple times and/or on multiple pages throughout the app. Examples include the header for each page (`app_globals.nav_bar`) and a function for serving static images (`app_globals.embed_image`). 
 
-## Deployment
-(#deployment-section)
+## Deployment(#deployment-section)
 
 Learnt is deployed with apache2 and mod_wsgi in a virtual environment 
 
@@ -34,9 +33,9 @@ Once that was working as described, the following changes were made so apache se
 
 Add this to the .wsgi script to activate the virtual environment and thus expose the dependencies:
 
-'''activate_this = '/var/www/learnt/learnt/bin/activate_this.py'
+```activate_this = '/var/www/learnt/learnt/bin/activate_this.py'
 with open(activate_this) as file_:
-	exec(file_.read(),dict(__file__=activate_this))'''
+	exec(file_.read(),dict(__file__=activate_this))```
   
 With the dash app itself, in this case `index.py`, I exposed the Flask server with this line `server = app.server` then imported that in the .wsgi script as 'application' which is the name of the object mod_wsgi is expecting.
 
