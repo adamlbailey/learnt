@@ -30,7 +30,7 @@ Learnt is deployed with apache2 and mod_wsgi in a virtual environment
 
 As dash is built on the Flask framework, this guide was invaluable in initiating a hello world example: https://www.jakowicz.com/flask-apache-wsgi/
 
-Once that was working as described, the following changes were made so apache served the dash app instead of the flask appu sed in the example:
+Once that was working as described, the following changes were made so apache served the dash app instead of the flask app used in the example:
 
 Add this to the .wsgi script to activate the virtual environment and thus expose the dependencies:
 
