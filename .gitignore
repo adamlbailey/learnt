@@ -1,2 +1,6 @@
 *cache__
 test.py
+.Python
+include/*
+lib/*
+pip-selfcheck.json
